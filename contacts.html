@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="menu-logo-section">
+                    <div class="menu-burger" id="burger">
+                        <img src="./icons/burger.svg" alt="бургер меню">
+                    </div>
+                    <h3 class="header-logo-h3 logo"><a href="index.html" target="_blank">Haleeva Karina</a></h3>               
+                </div>
+                <nav>
+                    <ul class="menu-list" id="menu-list">
+                       <li class="menu-list__item"><a href="aboutme.html" target="_blank">About Me</a></li>
+                       <li class="menu-list__item"><a href="IsroCosmetic.html" target="_blank">Resent Project</a></li>  
+                       <li class="menu-list__item"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                    <ul class="menu-list-social-media">
+                        <li class="menu-list-social-media__item"><a href="https://www.linkedin.com/in/karina-haleeva/" target="_blank"><img src="./icons/linkedin.svg" alt="linkedin" class="menu-list-social-media__img"></a></li>
+                        <li class="menu-list-social-media__item"><a href="https://www.instagram.com/karina_art_design_777/" target="_blank"><img src="./icons/inst.svg" alt="inst" class="menu-list-social-media__img"></a></li>
+                        <li class="menu-list-social-media__item"><a href="https://www.behance.net/karina777art" target="_blank"><img src="./icons/behance.svg" alt="behance" class="menu-list-social-media__img"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="introduction">
+        <div class="container">
+            <div class="introduction__section">
+                <div class="introduction__img">
+                    <img src="./icons/me.webp" alt="me">
+                </div>
+                
+                <h1 class="introduction__h1">Hi! I'm Karina - Web developer and graphic designer. <br>Nice to meet you on my portfolio!</h1>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__section" id="contacts">
+                <h1 class="contacts__h1">Contacts</h1>
+                <div class="contacts__info info">
+                    <div class="info__item">
+                        <img src="./icons/linkedin.svg" alt="Linkedin" class="info__item__img">
+                        <p class="info__item__p"><a href="https://www.linkedin.com/in/karina-haleeva/" target="_blank">Linkedin </a></p>
+                    </div>
+                    <div class="info__item">
+                        <img src="./icons/inst.svg" alt="Instagram" class="info__item__img">
+                        <p class="info__item__p"><a href="https://www.instagram.com/karina_art_design_777/" target="_blank">Instagram </a></p>
+                    </div>
+                    <div class="info__item">
+                        <img src="./icons/behance.svg" alt="Behance" class="info__item__img">
+                        <p class="info__item__p"><a href="https://www.behance.net/karina777art" target="_blank">Behance </a></p>
+                    </div>
+                    <h3 class="email-h3"><a href="mailto:karina777art@gmail.com">karina777art@gmail.com</a></h3>
+                    <h3 class="info__heading-h3">I welcome the opportunity to collaborate with you.</h3>
+                    <form class="form" action ="mailto:karina777art@gmail.com" method="POST">
+                        <input class="form__field" type="text" id="name" name="name" placeholder="Your name">
+                        <input class="form__field" type="email" id="email" name="email" placeholder="Your email to stay in touch">
+                        <button class="form__button button" type="submit"><p class="button__text">Let’s rock</p></button>
+                    </form>    
+                </div>
+            </div>    
+        </div>
+    </section>            
+    <footer>
+        <h1 class="action">Let’s work together</h1>
+        <div class="footer-menu">
+            <h3 class="email-h3"><a href="mailto:karina777art@gmail.com">karina777art@gmail.com</a></h3>
+            <ul class="menu-list-social-media" id="contacts">
+                <li class="menu-list-social-media__item"><a href="https://www.linkedin.com/in/karina-haleeva/" target="_blank"><img src="./icons/linkedin.svg" alt="linkedin" class="menu-list-social-media__img"></a></li>
+                <li class="menu-list-social-media__item"><a href="https://www.instagram.com/karina_art_design_777/" target="_blank"><img src="./icons/inst.svg" alt="inst" class="menu-list-social-media__img"></a></li>
+                <li class="menu-list-social-media__item"><a href="https://www.behance.net/karina777art" target="_blank"><img src="./icons/behance.svg" alt="behance" class="menu-list-social-media__img"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('burger').addEventListener('click', function() {
+            const menuList = document.getElementById('menu-list');
+            menuList.classList.toggle('active'); // Переключить класс active
+        });
+    </script>
+
+</body>
+</html>
